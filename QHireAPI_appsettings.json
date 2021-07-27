@@ -1,0 +1,35 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Settings": {
+    //Other Common Configuraitons
+    "ClientSpecificConfigs": [
+      {
+        // Client Configurations
+        "DB": "mysql",
+        "ClientName": "QHire",
+        "ClientId": 1,
+        "ConnectionString": "Server=localhost;Database=qhiredb_dev;User=qhire;Password=Qhire@1234;",
+        "MethodsWithNoSessionIDCheck": "GetEmployeeDetails|GetCodeQuestion|UpdateCodingTestAnswer",
+        "EnableEmails": false,
+        "SendEmails": "",
+        "APICalls": ""
+      },
+      {
+        // Client Configurations
+        "DB": "sql",
+        "ClientName": "IOT",
+        "ClientId": 2,
+        "ConnectionString": "Data Source=13.232.132.224; Initial Catalog = IOT; User ID=sa; Password=Qentelli@1234",
+        "MethodsWithNoSessionIDCheck": "GetLikes",
+        "EnableEmails": false,
+        "SendEmails": "",
+        "APICalls": ""
+      }
+    ]
+  }
+}
